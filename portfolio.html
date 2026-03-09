@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Radhika Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-family:'Poppins',sans-serif;
+background:#f5f7fa;
+}
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fb;
+color:#333;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#2c5364;
+color:white;
+}
+nav h1{
+color:#3ec6ff;
+}
+nav ul{
+display:flex;
+list-style:none;
+}
+nav ul li{
+margin-left:30px;
+}
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#0f172a;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+#home{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#2563eb,#38bdf8);
+color:white;
+}
+
+#home h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+#home p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+button{
+padding:10px 20px;
+border:none;
+background:white;
+color:#2563eb;
+font-weight:bold;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e2e8f0;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:80px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+.profile-pic{
+width:200px;
+height:200px;
+border-radius:50%;
+border:5px solid #3ec6ff;
+box-shadow:0 0 20px #3ec6ff,0 0 40px #3ec6ff;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 10px #3ec6ff,0 0 20px #3ec6ff;}
+to{box-shadow:0 0 30px #3ec6ff,0 0 60px #3ec6ff;}
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+.hero h2{
+font-size:40px;
+margin-top:20px;
+}
+
+.hero p{
+font-size:20px;
+margin:15px 0;
+}
+button{
+background:#3ec6ff;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#00b4ff;
+transform:scale(1.05);
+}
+#typing{
+color:#3ec6ff;
+font-weight:600;
+}
+/* ABOUT */
+
+.about{
+padding:70px 30px;
+background:#2c5364;
+}
+
+
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+max-width:1100px;
+margin:auto;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text p{
+font-size:18px;
+line-height:1.8;
+color:#f1f1f1;
+background:rgba(255,255,255,0.08);
+padding:15px 20px;
+margin-bottom:20px;
+border-left:4px solid #3ec6ff;
+border-radius:8px;
+}
+
+.about-images{
+flex:1;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+justify-items:center;
+}
+.profile-pic{
+width:200px;
+height:200px;
+border-radius:50%;
+border:5px solid #3ec6ff;
+box-shadow:0 0 20px #3ec6ff,0 0 40px #3ec6ff;
+animation:glow 2s infinite alternate;
+display:block;
+margin:auto;
+}
+
+
+.about-images img{
+width:290px;
+height:190px;   /* height taggincham */
+object-fit:cover;
+object-position:top;   /* top part chupistundi */
+border-radius:15px;
+
+border:2px solid rgba(255,255,255,0.4);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.4),
+0 0 15px rgba(62,198,255,0.5);
+
+transition:0.5s;
+}
+
+/* Hover animation */
+
+.about-images img:hover{
+transform:scale(1.1) rotate(1deg);
+
+box-shadow:
+0 0 20px #3ec6ff,
+0 0 40px #3ec6ff;
+}
+/* SKILLS */
+
+.skills{
+padding:60px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+text-align:center;
+}
+
+.skills-container{
+width:60%;
+margin:auto;
+}
+
+.skill{
+margin:20px 0;
+text-align:left;
+}
+
+.skill-bar{
+width:100%;
+background:#ddd;
+height:20px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:20px;
+background:#3ec6ff;
+border-radius:10px;
+animation:fill 2s ease-in-out;
+}
+
+.html{width:95%;}
+.css{width:90%;}
+.js{width:80%;}
+.python{width:70%;}
+.java{width:65%;}
+html{
+scroll-behavior:smooth;
+}
+
+@keyframes fill{
+from{width:0;}
+}
+#techstack{
+padding:60px;
+text-align:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.tech{
+background:#3ec6ff;
+padding:12px 25px;
+border-radius:25px;
+font-size:18px;
+font-weight:600;
+color:black;
+transition:0.3s;
+}
+.tech-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.tech:hover{
+transform:scale(1.1);
+background:#00b4ff;
+color:white;
+}
+#projects{
+padding:60px;
+text-align:center;
+background:#2c5364;
+color:white;
+}
+.project-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.project-card{
+background:#203a43;
+padding:25px;
+width:260px;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+.project-card button{
+margin-top:15px;
+background:#3ec6ff;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.project-card button:hover{
+background:#00b4ff;
+transform:scale(1.05);
+}
+.project-card:hover{
+transform:translateY(-10px);
+background:#3ec6ff;
+color:black;
+}
+#education{
+padding:60px;
+text-align:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+.education-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.education-card{
+background:#203a43;
+padding:25px;
+width:260px;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.education-card:hover{
+transform:translateY(-10px);
+background:#3ec6ff;
+color:black;
+}
+#achievements{
+padding:60px;
+text-align:center;
+background:#2c5364;
+color:white;
+}
+
+.ach-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.ach-card{
+background:#203a43;
+padding:25px;
+width:260px;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+
+.ach-card:hover{
+transform:translateY(-10px);
+background:#3ec6ff;
+color:black;
+}
+
+/* CONTACT */
+
+.contact{
+padding:60px 20px;
+text-align:center;
+background:#2c5364;
+color:white;
+}
+
+.contact h2{
+margin-bottom:25px;
+background:linear-gradient(45deg,#3ec6ff,#6C63FF);
+color:white;
+display:inline-block;
+padding:10px 25px;
+border-radius:10px;
+font-size:28px;
+}
+
+.contact form{
+margin-top:20px;
+}
+
+.contact input,
+.contact textarea{
+width:60%;
+padding:12px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+outline:none;
+}
+
+.contact textarea{
+height:120px;
+resize:none;
+}
+
+.contact button{
+background:#3ec6ff;
+color:white;
+border:none;
+padding:12px 25px;
+font-size:16px;
+border-radius:25px;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 10px #3ec6ff;
+}
+
+.contact button:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #3ec6ff,0 0 40px #3ec6ff;
+background:#00b4ff;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f2027;
+color:white;
+text-align:center;
+padding:20px;
+}
+/* Scroll Progress Bar */
+
+#progressBar{
+position:fixed;
+top:0;
+left:0;
+height:6px;
+width:0%;
+background:#3ec6ff;
+z-index:1000;
+}
+
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+
+<body>
+    <div id="progressBar"></div>
+    <nav>
+<h1>Radhika</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<img src="images/radhika.sig.jpeg" class="profile-pic">
+
+<div class="hero-text">
+
+<h2>Hi, I'm <span>Radhika Siyyadula</span></h2>
+
+<p>Frontend Developer | CSE Student</p>
+
+<a href="resume.pdf" target="_blank">
+<button>View Resume</button>
+</a>
+
+<a href="resume.pdf" download>
+<button>Download Resume</button>
+</a>
+
+</div>
+
+</section>
+
+<section class="about" id="about" data-aos="fade-up">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="about-text">
+
+<p>I am <b>Siyyadula Radhika</b>, a CSE student passionate about Frontend Web Development.</p>
+
+<p>I enjoy building responsive websites using HTML, CSS and JavaScript.</p>
+
+<p>I love learning new technologies and improving my development skills.</p>
+
+<p>My goal is to become a professional web developer.</p>
+
+</div>
+
+<div class="about-images">
+
+<img src="images/car.jpg">
+<img src="images/semi.jpg">
+<img src="images/fest.jpg">
+<img src="images/temple.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="skills" id="skills" data-aos="fade-right">
+
+<h2>My Skills</h2>
+<div class="skills-container">
+
+<div class="skill">
+<h3>HTML</h3>
+<div class="skill-bar">
+<div class="skill-fill html"></div>
+</div>
+</div>
+
+<div class="skill">
+<h3>CSS</h3>
+<div class="skill-bar">
+<div class="skill-fill css"></div>
+</div>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<div class="skill-bar">
+<div class="skill-fill js"></div>
+</div>
+</div>
+
+<div class="skill">
+<h3>Python</h3>
+<div class="skill-bar">
+<div class="skill-fill python"></div>
+</div>
+</div>
+
+<div class="skill">
+<h3>Java</h3>
+<div class="skill-bar">
+<div class="skill-fill java"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+<section id="techstack">
+
+<h2>My Tech Stack</h2>
+
+<div class="tech-container">
+
+<div class="tech">HTML</div>
+<div class="tech">CSS</div>
+<div class="tech">JavaScript</div>
+<div class="tech">Python</div>
+<div class="tech">C Programming</div>
+</div>
+</section>
+<section id="projects">
+<h2>My Projects</h2>
+<div class="project-container">
+<div class="project-card">
+<h3>Emergency Contact App</h3>
+<p>This application helps users quickly access emergency contacts during urgent situations.</p>
+<a href="#" target="_blank">
+<button>View Project</button>
+</a>
+</div>
+<div class="project-card">
+<h3>Personal Portfolio Website</h3>
+<p>A responsive portfolio website built using HTML and CSS to showcase my skills.</p>
+<a href="#" target="_blank">
+<button>View Project</button>
+</a>
+</div>
+</div>
+</section>
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="education-container">
+
+<div class="education-card">
+<h3>Inter(MPC)</h3>
+<p>Vivekananda Engineering College</p>
+<p>2022 – 2024</p>
+</div>
+
+<div class="education-card">
+<h3>B.tech(CSE)</h3>
+<p>St.Marys group of Enginnering college </p>
+<p>2024 – 2028</p>
+</div>
+
+<div class="education-card">
+<h3>SSC</h3>
+<p>BALAJI High School</p>
+<p>2021</p>
+</div>
+<section id="achievements">
+
+<h2>Achievements & Activities</h2>
+
+<div class="ach-container">
+
+<div class="ach-card">
+<h3>Web Development Learning</h3>
+<p>Continuously learning HTML, CSS and JavaScript to build modern websites.</p>
+</div>
+
+<div class="ach-card">
+<h3>Portfolio Project</h3>
+<p>Developed a responsive personal portfolio website using HTML and CSS.</p>
+</div>
+
+<div class="ach-card">
+<h3>Programming Practice</h3>
+<p>Practicing programming with Python, Java and C to improve problem solving skills.</p>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</section>
+<section class="contact" id="contact" data-aos="fade-up">
+
+<h2>Contact</h2>
+
+<p>Email: yourmail@gmail.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+
+<form onsubmit="showMessage()" action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required><br>
+
+<input type="email" name="email" placeholder="Your Email" required><br>
+
+<textarea name="message" placeholder="Message" required></textarea><br>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p id="successMsg" style="color:lightgreen; display:none;">
+Message Sent Successfully ✔
+</p>
+
+</section>
+<footer>
+
+<p>© 2026 Radhika Portfolio</p>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1200,
+});
+</script>
+<script>
+
+
+
+function showMessage(){
+document.getElementById("successMsg").style.display="block";
+}
+
+window.onscroll=function(){
+
+let winScroll=document.body.scrollTop || document.documentElement.scrollTop;
+
+let height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let scrolled=(winScroll/height)*100;
+
+document.getElementById("progressBar").style.width=scrolled+"%";
+
+}
+
+</script>
